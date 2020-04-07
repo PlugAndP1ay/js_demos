@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM task 2</title>
+</head>
+<body>
+
+
+    <script>
+
+
+        let human = {
+            gender: 'male',
+            name: 'Alex',
+            adult: true
+        };
+
+        let dog = {
+            breed: 'fox terrier',
+            woolColor: 'black and white',
+            tailTrimmed: false
+        };
+
+        const typeFuel = {
+            DIESEL: 'дизель',
+            PETROL: 'бензин',
+            ELECTRIC: 'електричество',
+            HYBRID: 'гибрид'
+        };
+
+        const engineType = {
+            V: 'V-образный',
+            I: 'рядный',
+            VR: 'VR-образный',
+            W: 'W-образный',
+            O: 'опозитный',
+            E: 'електрический'
+        };
+
+        const manufacturer = {
+            VW: 'Фольцваген',
+            MERCEDES: 'Мерседес',
+            TOYOTA: 'Тойота',
+            Audi: 'Ауди',
+            Tesla: 'Тесла'
+        };
+
+        const engineName = {
+            petrol3_2: 0,
+            diesel2_5: 1,
+            electric2020: 2
+        }
+
+        let engine =
+            [{
+            capacity: 3.2,
+            fuel: typeFuel.PETROL,
+            type: engineType.V,
+            manufacturer: manufacturer.VW
+        }]
+                [{
+            capacity: 2.5,
+            fuel: typeFuel.DIESEL,
+            type: engineType.V,
+            manufacturer: manufacturer.Audi
+        }]
+                [{
+            capacity: undefined,
+            fuel: typeFuel.ELECTRIC,
+            type: engineType.E,
+            manufacturer: manufacturer.MERCEDES
+        }];
+
+
+        let car1 = new car1();
+        car1 = {
+            engine: engine[engineName.diesel2_5],
+            manufacturer: manufacturer.Audi,
+            price: 70000
+        };
+
+        car2 = {
+            engine: engine[engineName.electric2020],
+            manufacturer: manufacturer.Tesla,
+            price: 50000
+        };
+
+        // for (let property in car1) {
+        //     console.log(property.toString());
+        // }
+
+        let obj = {a: 1, b: 2, c: 3};
+
+        for (const prop of obj) {
+            console.log(`obj.${prop} = ${obj[prop]}`);
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
