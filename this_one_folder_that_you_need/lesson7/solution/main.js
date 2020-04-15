@@ -89,3 +89,31 @@ btnLog.onclick = ()=>{
     // console.log(`text1:${text1}\n text2:${text2}\\n text3:${text3}\\n text4:${text4}\\n`);
     console.log(thisText1.value);
 }
+
+
+//////функція яка генерує таблицю 6 завдання
+
+let generateTable = (row, col, innerDiv) => {
+    let divka = document.getElementById(innerDiv);
+    console.log(divka);
+    let table = document.createElement("table");
+
+    for (let i = 0; i < row; i++){
+        let t = table.insertRow(i);
+        for(let j = 0; j < col; j++){
+            // table.insertRow(i).insertCell(j); не работает так)
+            t.insertCell(j).innerText = `[${i+1}][${j+1}]`;
+        }
+    }
+
+    divka.appendChild(table);
+
+}
+
+
+
+
+generateTable(5,6, "table1");
+
+
+
