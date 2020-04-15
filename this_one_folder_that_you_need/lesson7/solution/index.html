@@ -3,8 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Lesson 7</title>
+    <link rel="stylesheet" href="navBar.css">
 </head>
 <body>
+
+
+<div id="container">
+    <div id="nav-bar">
+        <div class="nav-line"></div>
+        <div class="nav-line"></div>
+        <div class="nav-line"></div>
+    </div>
+    
+    <ul id="nav-menu">
+        <li id="menu1"><a href="">First</a></li>
+        <li id="menu2"><a href="">Second</a></li>
+        <li id="menu3"><a href="">Third</a></li>
+        <li id="menu4"><a href="">Fourth</a> </li>
+    </ul>
+    
+    <p id="text">
+        Используя JavaScript, сделайте так, чтобы при клике на кнопку исчезал элемент с id="text"
+        <button
+                onclick="document.getElementById('text').style.display = 'none';
+            this.style.display = 'none'">
+            Исчезни
+        </button>
+    </p>
+
+    <br>
+
+    <form action="" name="formAcceptAge">
+        <label>Введите возраст
+            <input type="number" required placeholder="Введите свой возраст" max="120"  name="age" >
+        </label>
+        <button type="submit" name="btnAcceptAge" id="btnAcceptAge">Подтвердить</button>
+    </form>
+
+    <div id="comments">
+        <h2>Коментарии</h2>
+    </div>
+</div>
+
+
+
 <script src="main.js"></script>
 </body>
 </html>

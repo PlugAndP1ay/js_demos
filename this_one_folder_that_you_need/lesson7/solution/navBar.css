@@ -1,0 +1,42 @@
+#nav-bar{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.nav-line{
+    width: 30px;
+    margin: 3px;
+    border: 1px solid black;
+}
+
+#nav-menu{
+    width: fit-content;
+    list-style: none;
+    padding-left: 5px;
+    margin-top: 5px;
+}
+
+#nav-menu li{
+    display: none;
+    padding-bottom: 10px;
+}
+
+#nav-menu a{
+    text-decoration: none;
+    color: black;
+}
+
+#comments{
+    max-height: 400px;
+    overflow: auto;
+}
+
+.comment{
+    border: solid lightblue 1px;
+    margin: 5px;
+    padding: 3px;
+}
+
