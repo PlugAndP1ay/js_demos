@@ -73,7 +73,19 @@ comments.forEach((values)=>{
 
 
 
-//////////2 форми
+//////////2 форми   5 exercises!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+let text1 = document.form1.text1;
+let thisText1;
+let onInptText1 = ($)=>{
+    thisText1 = $;
+}
+let text2 = document.form1.text2;
+let text3 = document.form2.text3;
+let text4 = document.form2.text4;
 
+btnLog = document.getElementById("btnLog");
+btnLog.onclick = ()=>{
 
-
+    // console.log(`text1:${text1}\n text2:${text2}\\n text3:${text3}\\n text4:${text4}\\n`);
+    console.log(thisText1.value);
+}
