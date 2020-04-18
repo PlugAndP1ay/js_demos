@@ -101,7 +101,6 @@ let generateTable = (row, col, innerDiv) => {
     for (let i = 0; i < row; i++){
         let t = table.insertRow(i);
         for(let j = 0; j < col; j++){
-            // table.insertRow(i).insertCell(j); не работает так)
             t.insertCell(j).innerText = `[${i+1}][${j+1}]`;
         }
     }
