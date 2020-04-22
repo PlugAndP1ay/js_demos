@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson8</title>
+</head>
+<body>
+<p>
+    - Реализуйте записную книгу, хранящую данные в локальном хранилище.
+    Данные которые надо сохранять : ФИО, номер, почта, фирма, отдел, день рождения
+    Данные вводить через соответсвующую форму.
+    --Каждому контакту добавить кнопку для удаления контакта.
+    --Каждому контакту добавить кнопку редактироваиня. При нажати на нее появляется форма, в которой есть все
+    необходимые инпуты для редактирования, которые уже заполнены данными объекта
+</p>
+<label>ФИО
+    <input type="text" id="fio">
+</label>
+<br><br>
+<label>Номер телефона
+    <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+380*********">
+</label>
+<br><br>
+<label>@mail
+    <input type="email" id="email">
+</label>
+<br><br>
+<label>Фирма
+    <input type="text" id="firm">
+</label>
+<br><br>
+<label>Отдел
+    <input type="text" id="department">
+</label>
+<br><br>
+<button id="btnSave">Сохранить</button>
+<br><br>
+<select id="allNotes" multiple></select>
+
+
+
+<script src="task4.js"></script>
+</body>
+</html>
